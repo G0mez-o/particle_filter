@@ -1,15 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <random>
-#include <opencv2/opencv.hpp>
-
-class particle
-{
-public:
-  int x;
-  int y;
-  float likehood;
-};
+#include <particle_filter.hpp>
 
 int main(int argh, char* argv[])
 {

@@ -6,7 +6,9 @@ add_compile_options(-std=c++11)
 
 find_package(OpenCV 3.3 REQUIRED)
 
-include_directories(${OpenCV_INCLUDE_DIRS})
+include_directories(
+  include
+  ${OpenCV_INCLUDE_DIRS})
 
 add_executable (particle particle_filter.cpp)
 target_link_libraries (particle ${OpenCV_LIBS})
